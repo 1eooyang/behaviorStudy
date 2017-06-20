@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">adsafelike</string>
+
+    <string name="image_behavior">com.example.leo.adsafelike.ImageBehavior</string>
+    <string name="recycle_behavior"> com.example.leo.adsafelike.RecycleViewBehavior</string>
+    <string name="text_behavior">com.example.leo.adsafelike.TextViewBehavior</string>
+    <string name="button_behavior">com.example.leo.adsafelike.ButtonBehavior</string>
+    <string name="adoff">仿净网大师</string>
+</resources>

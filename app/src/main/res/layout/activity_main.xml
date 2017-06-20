@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leo.adsafelike.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:background="@color/nomal_color_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/adoff"
+            android:textColor="@color/nomal_write"
+            android:textSize="@dimen/PX_50"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/PX_50"
+            android:layout_height="@dimen/PX_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/PX_30"
+            android:src="@drawable/menu"
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main.cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/main.appbar"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/main.collapsing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/nomal_color_bg"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:statusBarScrim="@android:color/transparent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PX_656"
+                    android:background="@color/nomal_color_bg"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"
+                    />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/main.toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/collapsed_header_height"
+                    app:layout_collapseMode="pin"
+                    >
+                    <RelativeLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/main.toolbar.logo"
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:src="@drawable/logo"
+                            />
+
+                        <TextView
+                            android:layout_marginTop="5px"
+                            android:id="@+id/main.toolbar.text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已保护您15天"
+                            android:textColor="@color/nomal_write"
+                            android:layout_marginLeft="80px"
+                            android:textSize="26px"
+                            />
+
+                        <Button
+                            android:id="@+id/main.toolbar.btn"
+                            android:layout_width="72px"
+                            android:layout_height="40px"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/selector_switch_short"
+                            android:layout_marginRight="30px"
+                            />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/PX_16"
+            android:lineSpacingMultiplier="1.2"
+            android:text="以保护您38天"
+            android:textColor="@color/nomal_write"
+            android:textSize="26px"
+            app:layout_behavior="@string/text_behavior"
+            />
+        <ImageView
+            android:id="@+id/im_logo_big"
+            android:layout_width="274px"
+            android:layout_height="302px"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/selector_image_logo"
+            app:layout_behavior="@string/image_behavior"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+        </android.support.v4.view.ViewPager>
+
+
+          <Button
+              android:id="@+id/btn"
+              android:layout_width="300px"
+              android:layout_height="70px"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/selector_switch_long"
+              android:text="点击开启净网模式"
+              android:textColor="@color/nomal_write"
+              app:layout_behavior="@string/button_behavior"
+              />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="collapsed_header_height">98px</dimen>
+    <dimen name="init_float_offset_y">130dp</dimen>
+    <dimen name="collapsed_float_offset_y">20px</dimen>
+
+
+    <dimen name="textview_init_height">394px</dimen>
+    <dimen name="textview_final_height">20px</dimen>
+    <dimen name="textview_margin_left">100px</dimen>
+    <dimen name="textview_margin_top">25px</dimen>
+
+
+
+    <dimen name="imageview_init_height">52px</dimen>
+    <dimen name="imageview_final_height">20px</dimen>
+    <dimen name="imageview_margin_left">30px</dimen>
+    <dimen name="imageview_margin_top">20px</dimen>
+
+    <dimen name="imageview_init_size_w">274px</dimen>
+    <dimen name="imageview_init_size_h">302px</dimen>
+    <dimen name="imageview_final_size_w">50px</dimen>
+    <dimen name="imageview_final_size_h">50px</dimen>
+
+
+    <dimen name="button_final_height">20px</dimen>
+    <dimen name="button_init_height">540px</dimen>
+    <dimen name="botton_margin_right">30px</dimen>
+    <dimen name="botton_margin_top">25px</dimen>
+    <dimen name="botton_text_size">10px</dimen>
+
+    <dimen name="button_init_size_w">300px</dimen>
+    <dimen name="button_init_size_h">70px</dimen>
+    <dimen name="button_final_size_w">72px</dimen>
+    <dimen name="button_final_size_h">40px</dimen>
+
+
+
+
+    <dimen name="PX_50">50px</dimen>
+    <dimen name="PX_30">30px</dimen>
+    <dimen name="PX_656">656px</dimen>
+    <dimen name="PX_262">262px</dimen>
+    <dimen name="PX_16">16px</dimen>
+</resources>
